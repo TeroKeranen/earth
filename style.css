@@ -5,10 +5,32 @@ body {
 }
 
 .shadow {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   box-shadow: inset -5px 0 30px 10px;
   position: absolute;
-  margin-top: -400px;
+  margin-top: -600px;
+}
+
+.box {
+  width: 600px;
+  height: 600px;
+  margin: 7% 0 0 35%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.box img {
+  height: 100%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    margin-left: -1260px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
