@@ -5,17 +5,38 @@ body {
 }
 
 .shadow {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400.5px;
   border-radius: 50%;
-  box-shadow: inset -5px 0 30px 10px;
+  box-shadow: inset -5px 0px 100px 5px, 0px 0px 200px 100px rgb(2, 2, 10);
   position: absolute;
-  margin-top: -600px;
+  margin-top: -405px;
+}
+.shadow2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: inset 0px 20px 10px 0px;
+  position: absolute;
+  margin-top: -300px;
+  left: 740px;
+  transform: skew(-10deg, 60deg);
+  animation-name: pinet;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pinet {
+  0% {
+  }
+  100% {
+    transform: skew(60deg, 60deg);
+  }
 }
 
 .box {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   margin: 7% 0 0 35%;
   border-radius: 50%;
   overflow: hidden;
@@ -23,12 +44,12 @@ body {
 
 .box img {
   height: 100%;
-  animation: spin 5s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
   0% {
-    margin-left: -1260px;
+    margin-left: -840px;
   }
   100% {
     margin-left: 0px;
